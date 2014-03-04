@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><title>Limits in Real Life - Flappy Bird</title><link href="main.css" type="text/css" rel="stylesheet"></head><body><header><h1>Limits in Real Life - Flappy Bird</h1></header><h1>Animate.css</h1>
+<p><em>Just-add-water CSS animation</em></p>
+<p><code>animate.css</code> is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.</p>
+<h2>Usage</h2>
+<p>To use animate.css in your website, simply drop the stylesheet into your document&#39;s <code>&lt;head&gt;</code>, and add the class <code>animated</code> to an element, along with any of the animation names. That&#39;s it! You&#39;ve got a CSS animated element. Super!</p>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;animate.min.css&quot;&gt;
+&lt;/head&gt;</code></pre>
+<p>You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:</p>
+<pre><code class="language-javascript">$(&#39;#yourElement&#39;).addClass(&#39;animated bounceOutLeft&#39;);</code></pre>
+<p>You can also detect when an animation ends:</p>
+<pre><code class="language-javascript">$(&#39;#yourElement&#39;).one(&#39;webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend&#39;, doSomething());</code></pre>
+<p>You can change the duration of your animations, add a delay or change the number of times that it plays:</p>
+<pre><code class="language-css">#yourElement {
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 2s;
+    -vendor-animation-iteration-count: infinite;
+}</code></pre>
+<p><em>Note: be sure to replace &quot;vendor&quot; in the CSS with the applicable vendor prefixes (webkit, moz, etc)</em></p>
+<h2>Custom Builds</h2>
+<p>Animate.css is powered by <a href="http://gruntjs.com">Grunt</a>, and you can create custom builds pretty easily. First of all, you’ll need Grunt and all other dependencies:</p>
+<pre><code class="language-sh">$ cd path/to/animate.css/
+$ sudo npm install</code></pre>
+<p>Next, run <code>grunt watch</code> to watch for changes and compile your custom builds. For example, if you want only some of the the “attention seekers”, simply edit the <code>.animate-config.json</code> file to select only the animations you want to use.</p>
+<pre><code class="language-javascript">&quot;attention_seekers&quot;: {
+  &quot;bounce&quot;: true,
+  &quot;flash&quot;: false,
+  &quot;pulse&quot;: false,
+  &quot;shake&quot;: true,
+  &quot;swing&quot;: true,
+  &quot;tada&quot;: true,
+  &quot;wobble&quot;: true
+}</code></pre>
+<h2>License</h2>
+<p>Animate.css is licensed under the MIT license. (<a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a>)</p>
+<h2>Contributing</h2>
+<p>Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a <a href="http://codepen.io">pen</a>. That last one is important.</p>
+<footer>&copy; 2013 Krish Dholakiya. All Rights Reserved. Background Image By <a href="http://harunaakatsuki.deviantart.com/" target="_blank">HarunaAkatsuki</a>. Made for Calculus A.</footer></body></html>

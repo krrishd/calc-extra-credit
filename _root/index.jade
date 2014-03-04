@@ -1,0 +1,24 @@
+.main.animated.slideInLeft
+	p
+		| Limits are an interesting Calculus concept. In essence,
+		blockquote
+			| limits are the intended height of a function
+		| It seems kind of obscure, until of course we look at them from a real world perspective. A great example of limits in the real world is the popular game, 
+		h2 Flappy Bird
+.asy.sec.animated.slideInRight
+	h2 Horizontal Asymptote
+	p
+		| One part of limits is the concept of an asymptote,
+		blockquote
+			| a line that continually approaches a given curve but does not meet it at any finite distance
+		| Essentially, this is a line in the graph where no point exists. For example, in terms of a horizontal asymptote of
+		pre
+			| y = 2
+		| there is no valid x value when y is equal to 2.
+		p.px So what does this have to do with Flappy Bird?
+		p
+			| Well, these types of asymptotes (horizontal asymptotes) exist in Flappy Bird. Take a look at the following:
+			img(src="asy.png")
+			| Look for the black lines above and below the pipes. Essentially, these are horizontal asymptotes since the bird can't exist at these points because it would be touching the pipe. Instead, the bird will die. Therefore
+			blockquote
+				| As x approaches the pipe, the limit of the function is the y value at which the pipe starts.
